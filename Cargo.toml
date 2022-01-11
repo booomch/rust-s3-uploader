@@ -1,0 +1,21 @@
+[package]
+name = "s3-uploader"
+version = "0.1.0"
+edition = "2021"
+
+
+[dependencies]
+dotenv = "0.15.0"
+tokio = { version = "1", features = ["full"] }
+axum = { version = "0.3", features = ["multipart"] }
+futures-util = "0.3"
+fastrand = "1.5"
+rusoto_core = "0.47"
+rusoto_s3 = "0.47"
+rusoto_credential = "0.47"
+tracing-subscriber = { version = "0.3", features = ["env-filter"] }
+tracing = "0.1"
+anyhow = "*"
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+lazy_static = "1.4"
